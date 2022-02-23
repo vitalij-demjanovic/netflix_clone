@@ -1,0 +1,56 @@
+.login-page {
+    background:  linear-gradient(rgba(0,0,0,.8) 0,rgba(0,0,0,0) 100%,rgba(0,0,0,.8) 100%), url(../../assets/img/aboutBack.jpg) center center/cover no-repeat;
+    height: 100vh;
+}
+
+.login-header {
+    padding-top: 20px;
+    margin: 0 3.5rem 200px;
+}
+
+.header_logo {
+    width: 136px;
+    height: 38px;
+}
+
+.erro-valid {
+    padding: 10px;
+    color: #F1F1F1;
+    background: #FFA842;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*Response*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .login-header {
+        padding-top: 20px;
+        margin: 0 3.5rem 20px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .login-header {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+
+}
+
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+
+}

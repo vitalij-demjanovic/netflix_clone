@@ -1,0 +1,186 @@
+/*NavAbout*/
+
+.nav-about {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3.5rem 200px;
+}
+
+.nav-logo {
+    background: url(../../assets/img/640px-Netflix_2015_logo.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.nav-btn {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F1F1F1;
+    border-radius: 3px;
+}
+
+.nav-btn-about {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F1F1F1;
+    border-radius: 3px;
+}
+
+/*NavHome*/
+
+.nav-home {
+    background:  linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0)), rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+}
+
+.menu {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3.5rem;
+}
+
+.find-magnifier {
+    background: url(../../assets/img/magnifier.png) center center/cover no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-find {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.find-input {
+    padding: 0!important;
+    width: 0;
+    border-radius: 8px;
+    transition: all 0.8s ease;
+}
+
+.find-input-mobile {
+    padding: 8px;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+}
+
+.find-input.active {
+    padding: 8px !important;
+    width: 200px;
+    border: 1px solid #F1F1F1;
+}
+
+.mobile-btn {
+    background: url(../../assets/img/menu.png) no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0,0,0, 0.9);
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.mobile-menu.active {
+    width: 200px;
+    padding: 10px;
+}
+
+.close-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F1F1F1;
+}
+
+.out-btn {
+    margin-top: 20px;
+    width: 100%;
+    background: #e50914;
+    border-radius: 3px;
+    text-align: center;
+    color: #F1F1F1;
+    overflow: hidden;
+    inline-size: 180px;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/*Response*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .nav-about {
+        margin: 0 3.5rem 80px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .menu {
+        margin: 0 1.5rem;
+    }
+
+    .nav-about {
+        margin: 0 1.5rem 80px;
+    }
+
+    .mobile-btn {
+        display: block;
+    }
+    .find-input,
+    .nav-btn,
+    .find-magnifier {
+        display: none;
+    }
+    .nav-logo {
+        width: 120px;
+        height: 28px;
+    }
+}
+

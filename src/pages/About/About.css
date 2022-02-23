@@ -1,0 +1,129 @@
+.about-page {
+    background:  linear-gradient(rgba(0,0,0,.8) 0,rgba(0,0,0,0) 100%,rgba(0,0,0,.8) 100%), url(../../assets/img/aboutBack.jpg)center center/cover no-repeat;
+    height: 100vh;
+}
+
+.about-content {
+    margin: 0 auto;
+    align-content: center;
+    max-width: 800px;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.content_title {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.content-sub {
+    margin-bottom: 30px;
+}
+
+.content-paragraph {
+    margin-bottom: 15px;
+}
+
+.label-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content_label {
+    display: flex;
+}
+
+.content_label input{
+    min-width: 450px;
+    background: #F1F1F1;
+    padding: 10px;
+}
+
+.label-btn {
+    display: flex;
+    align-items: center;
+    background: #e50914;
+    color: #F1F1F1;
+    font-size: 28px;
+    padding: 8px 15px;
+}
+
+.label-btn:after {
+    content: '';
+    margin-left: 8px;
+    background: url(../../assets/img/arrow.png) center center/cover no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/*Response*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .about-page {
+        padding-bottom: 50px;
+    }
+    .content_title {
+        font-size: 44px;
+    }
+    .content_label input{
+        min-width: 350px;
+        background: #F1F1F1;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .about-content {
+        padding: 0 20px;
+    }
+
+    .content-sub {
+        font-size: 20px;
+    }
+
+    .content_title {
+        font-size: 34px;
+    }
+
+    .content-paragraph {
+        font-size: 16px;
+    }
+
+    .content_label input{
+        min-width: 250px;
+        background: #F1F1F1;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .label-btn {
+        font-size: 18px;
+        padding: 8px 15px;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .content_label {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+}
+
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+
+}
