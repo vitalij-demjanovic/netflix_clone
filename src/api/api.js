@@ -1,6 +1,5 @@
-import { apiKey } from "./apiConstans";
-import {store} from "../store/store";
-import {ERROR_VALID} from "../store/actions";
+import { apiKey } from "./constans";
+
 
 const randomNum = () => {
     return Math.floor(Math.random() * (20 - 1 + 1)) + 1;
